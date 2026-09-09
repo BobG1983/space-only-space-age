@@ -94,8 +94,7 @@ data:extend(
     results =
     {
       fluid("ammonia", 30),
-      fluid("methane", 30),
-      fluid("water", 10)
+      fluid("methane", 30)
     },
     allow_productivity = true,
     allow_decomposition = false,
@@ -173,7 +172,8 @@ data:extend(
   {
     type = "recipe",
     name = "volatiles-science-pack",
-    categories = {"crafting-with-fluid"},
+    -- Two fluid inputs need the chemical plant; assemblers have one input fluid box (D-69).
+    categories = {"chemistry"},
     subgroup = "science-pack",
     auto_recycle = false,
     enabled = false,

@@ -171,6 +171,8 @@ end
 -- Shortcuts (D-67). Four give or toggle something that is gone. The rest unlocked with
 -- construction-robotics, which is gone, so blueprints and undo are available from the start.
 remove_named("shortcut", {"give-artillery-targeting-remote", "give-spidertron-remote", "toggle-personal-roboport", "toggle-tall-entity-visibility"})
+-- The key bindings that spawn the two removed remotes go with their shortcuts.
+remove_named("custom-input", {"give-artillery-targeting-remote", "give-spidertron-remote"})
 local shortcuts = data.raw.shortcut or {}
 for _, name in ipairs({"copy", "cut", "paste", "undo", "redo", "give-blueprint", "give-blueprint-book", "give-deconstruction-planner", "give-upgrade-planner", "import-string"}) do
   if shortcuts[name] then

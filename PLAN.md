@@ -378,6 +378,8 @@ Kind: **M** = mechanical, **D** = design (user confirms).
 | D-66 | §7 wording "wood / fish" | `wood`, `raw-fish`, `scrap`, `spoilage`, `nutrients`, `jelly`, `yumako`, `yumako-mash`, `jellynut`, seeds, `bioflux`, `biter-egg`, `pentapod-egg` have no source and some spawn units when they spoil (`spoil_to_trigger_result`) | All removed (3.2) | M |
 | D-67 | §12 tips/sims | Shortcuts `give-artillery-targeting-remote`, `give-spidertron-remote`, `toggle-personal-roboport`, `toggle-tall-entity-visibility` name removed items/techs; `copy cut paste undo redo give-blueprint give-blueprint-book give-deconstruction-planner give-upgrade-planner import-string` unlock with removed `construction-robotics` | Delete the first four; set `technology_to_unlock = nil` on the rest (blueprints and undo available from the start) | M |
 | D-68 | §9 pack ordering "white before blue" | Kept vanilla white-tier techs (speed-module-2, kovarex, …) also list `chemical-science-pack` | Accepted for vanilla techs; the mod's own white techs cost RGW | M |
+| D-69 | §5 `volatiles-science-pack` "assembler, 10 s", 10 ammonia + 1 carbon-fiber + 20 methane | Two fluid ingredients; assembling-machine-2 and -3 have one input fluid box (`base/prototypes/entity/entities.lua:3230,5430`). The chemical plant has two (`:8746,8759`) and crafts item outputs | `categories = {"chemistry"}`; the pack is made in a chemical plant | D |
+| D-70 | §5 `volatile-separation` 30 ammonia + 30 methane + 10 water | Three fluid results; the chemical plant has two output fluid boxes (`:8772,8785`); only the cryogenic plant has three | Drop the 10 water. Water comes from ice through the melter, and §2 already describes volatile ice as ammonia + methane | D |
 
 ---
 

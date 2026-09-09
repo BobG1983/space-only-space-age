@@ -44,6 +44,7 @@ local function reprocessing_recipe(index)
       {type = "item", name = chunk(next_row.class), amount = 1, shared_probability = {min = 0.4, max = 0.6}},
       {type = "item", name = chunk(previous_row.class), amount = 1, shared_probability = {min = 0.6, max = 0.8}}
     },
+    main_product = chunk(row.class),
     allow_productivity = false,
     allow_quality = false,
     allow_decomposition = false
