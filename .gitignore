@@ -1,0 +1,5 @@
+*.zip
+/build/
+/tools/out/
+*.json.dump
+.DS_Store
